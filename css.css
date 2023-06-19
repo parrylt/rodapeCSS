@@ -1,0 +1,59 @@
+#barra {
+  position: fixed; /* mantém a barrinha presa na parte de baixo */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px; /*altura da barrinha */
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.9; /*opacidade pra ficar meio transparante*/
+  color: #00FF00;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 25px; /*mexe na altura dos textos dentro da barrinha*/
+  padding-left: 20px;
+  transition: 0.5s; 
+}
+#barra:hover {
+  height: 25%; /*passar mouse na barrinha e tamanho do retângulo*/
+}
+#barra:hover .informa {
+  opacity: 1; /*deixa a opacidade 0 de antes em 1 e faz aparecer o texto*/
+  transform: translateY(0); /* importante para o texto não ficar cortado pela página*/
+}
+.informa {
+  opacity: 0; /*deixa o texto invisível antes de passar o mouse*/
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.5s, transform 0.5s; /*ajuda na transição do texto*/
+  transform: translateY(200px); /*ajusta a "hitbox" da transformação do efeito da barrinha subindo*/
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.informa p, .informa h3 {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.informa-esq {
+  position: absolute; /*esse e outros arrumam a posição dos blocos de texto para não ficar uma bagunça*/
+  left: 0;
+  width: 30%;
+  top: -210px;
+}
+
+.informa-meio {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  top: -200px;
+}
+
+.informa-dir {
+  position: absolute;
+  right: 0;
+  width: 30%;
+  top: -200px;
+}
