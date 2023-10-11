@@ -1,5 +1,5 @@
 # rodapeCSS
-um rodapé que eu fiz para um trabalho de web design na ETEC
+um rodapé que eu fiz para um trabalho de web design na ETEC. Feito para este site https://capitaocrunch.000webhostapp.com/
 <br><br>
 
 <div align="center">
